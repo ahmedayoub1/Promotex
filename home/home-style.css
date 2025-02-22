@@ -1,0 +1,335 @@
+* {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background-color: #fff;
+      color: #333;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    h1, h2, h3, h4 {
+      margin-bottom: 0.5rem;
+    }
+
+    /* Header Styles */
+    header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 1rem 2rem;
+      border-bottom: 1px solid #ccc;
+    }
+
+    .logo h2 {
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 1.5rem;
+    }
+
+    .header-right {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
+
+    .shop-now-btn {
+      background-color: #a78b74;
+      color: #fff;
+      padding: 0.5rem 1rem;
+      border: none;
+      cursor: pointer;
+      border-radius: 4px;
+      font-weight: bold;
+    }
+
+    .shop-now-btn:hover {
+      background-color: #8f7863;
+    }
+
+    /* Hero Section */
+    .hero {
+      
+      width: 1357px;
+      height: 581px; /* Full viewport height */
+      overflow: hidden;
+      top: 160px;
+      border-radius: 8px;
+      
+    }
+
+    .hero-content {
+      position: relative;
+      width: 1357px;
+      height: 581px;
+      display: flex;
+      flex-direction: column; /* Stack items vertically */
+      align-items: flex-start; /* Align items to the left */
+      justify-content: center; /* Center items vertically */
+      text-align: left;
+      
+      
+      
+        /* Add padding to the left */
+    }
+
+    .hero-image-container {
+      position:absolute;
+      width: 100%;
+      height: 100%;
+    }
+
+    .hero-image {
+      width: 100%;
+      height: 100%;
+      object-fit: cover; /* Ensure the image covers the entire section */
+      
+    }
+
+    .hero-text {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: #fff; /* Ensure text is visible */
+    }
+
+    .hero h1 {
+      font-size: 48px;
+    line-height: 56.88px;
+    font-weight: 700;
+    color: #998A78;
+    margin-bottom: 1rem;
+      width:  457px;
+      height: 114px;
+    }
+
+    .hero p {
+      
+      margin-bottom: 1.5rem;
+      color: #998A78;
+      font-size: 24px; /* Corrected property name */
+      font-weight: 400; /* Corrected property value */
+      line-height: 36px;
+      height: 72px;
+      margin: 15px 0;
+      width: 461px;
+    }
+
+    .hero .hero-btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #998A78;
+        
+        border: 3px solid;
+        border-color:  #998A78;
+        background-color: white;
+        font-size: 20px;
+        width: 425px;
+        height: 62px;
+        line-height: 30px;
+        border-radius: 8px;
+       /*transform: scale(1.05);*/
+        
+      }
+    
+
+    /* Product Grid */
+.product-grid {
+  display: flex;
+  gap: 15px;
+  padding: 20px;
+  justify-content: center;
+}
+.product-item img {
+  width: 437px;
+  height: 225px;
+  transition: 0.3s;
+  border-radius: 4px;
+  object-fit: cover;
+}
+
+.product-item img:hover {
+  transform: scale(1.05);
+}
+
+    /* Categories Section */
+    .categories {
+      padding: 2rem;
+      text-align: center;
+    }
+
+    .categories h2 {
+      margin-bottom: 2rem;
+      font-size: 1.8rem;
+    }
+
+    .category-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+      justify-content: center;
+    }
+
+    .category-item {
+      width: 250px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      overflow: hidden;
+      text-align: center;
+    }
+
+    .category-item img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .category-item button {
+      width: 100%;
+      background-color: #a78b74;
+      color: #fff;
+      padding: 0.75rem;
+      border: none;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    .category-item button:hover {
+      background-color: #8f7863;
+    }
+
+    /* About Us Section */
+    .about-us {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+      padding: 2rem;
+      background-color: #f7f7f7;
+    }
+
+    .about-us h2 {
+      text-align: center;
+      margin-bottom: 1rem;
+      font-size: 1.8rem;
+    }
+
+    .about-content {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+      justify-content: center;
+    }
+
+    .about-box {
+      flex: 1 1 300px;
+      min-width: 280px;
+      background-color: #fff;
+      padding: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+    }
+
+    .about-box h3 {
+      margin-bottom: 0.5rem;
+    }
+
+    .about-box p {
+      line-height: 1.5;
+    }
+
+    /* Contact Us Section */
+    .contact-us {
+      padding: 2rem;
+      text-align: center;
+    }
+
+    .contact-us h2 {
+      margin-bottom: 1.5rem;
+      font-size: 1.8rem;
+    }
+
+    .contact-form {
+      max-width: 600px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    .contact-form label {
+      text-align: left;
+      font-weight: bold;
+      margin-bottom: 0.25rem;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+      width: 100%;
+      padding: 0.75rem;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      font-size: 1rem;
+    }
+
+    .contact-form button {
+      background-color: #a78b74;
+      color: #fff;
+      padding: 0.75rem;
+      border: none;
+      cursor: pointer;
+      border-radius: 4px;
+      font-weight: bold;
+      margin-top: 1rem;
+    }
+
+    .contact-form button:hover {
+      background-color: #8f7863;
+    }
+
+    /* Footer */
+    footer {
+      background-color: #a78b74;
+      color: #fff;
+      padding: 2rem;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+      justify-content: space-between;
+    }
+
+    .footer-section {
+      flex: 1 1 200px;
+      min-width: 180px;
+    }
+
+    .footer-section h4 {
+      margin-bottom: 1rem;
+    }
+
+    .footer-section ul {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    .footer-section ul li {
+      margin-bottom: 0.5rem;
+    }
+
+    .social-icons a {
+      margin-right: 0.5rem;
+      color: #fff;
+    }

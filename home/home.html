@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Promotex - Shop Smarter, Live Better</title>
+  <!-- For icons (optional) you can include Font Awesome or another icon library -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+  <link rel="stylesheet" href="home-style.css" />
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="logo">
+      <img src="secondPromotex.png" alt="logo"width="100px" height="100px" />
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#categories">Categories</a></li>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#contact">Contact Us</a></li>
+      </ul>
+    </nav>
+    <div class="header-right">
+      <a href="#" class="cart-icon"><i class="fas fa-shopping-cart"></i></a>
+      <button class="shop-now-btn">Shop Now</button>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero" id="hero">
+    <div class="hero-content">
+      <div class="hero-image-container">
+        <img src="hero Section.jpg" alt="Hero Image" class="hero-image" />
+        <div class="hero-text">
+          <h1>Shop Smarter, Live Better.</h1>
+          <p>Find everything you need, with deals you can’t resist, all at your fingertips.</p>
+          <button class="hero-btn">Shop Now</button>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="product-grid">
+    <div class="product-item">
+        <img src="IMG-20250210-WA0012.jpg" alt="Suit Fashion">
+    </div>
+    <div class="product-item">
+        <img src="grid.jpg" alt="Hat and Coat">
+    </div>
+    <div class="product-item">
+      <img src="7e109e7ec6efef1d92535bb5099a551c.jpg" alt="classic">
+  </div>
+</section>
+
+  <!-- About Us Section -->
+  <section class="about-us" id="about">
+    <h2>About Us</h2>
+    <div class="about-content">
+      <div class="about-box">
+        <h3>Our Mission</h3>
+        <p>
+          To create a shopping platform that’s reliable, convenient, 
+          and tailored to meet your needs. We’re here to bring you 
+          quality products and an effortless shopping experience.
+        </p>
+      </div>
+      <div class="about-box">
+        <h3>Why Choose Us?</h3>
+        <p>
+          From a wide range of products to fast delivery and exceptional 
+          customer support, we are your trusted partner in online shopping.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Categories Section -->
+  <section class="categories" id="categories">
+    <h2>Categories</h2>
+    <div class="category-grid">
+      <!-- Category 1: Men -->
+      <div class="category-item">
+        <img src="https://via.placeholder.com/250x300?text=Men+Category" alt="Men Category" />
+        <button>Shop Now</button>
+      </div>
+      <!-- Category 2: Women -->
+      <div class="category-item">
+        <img src="https://via.placeholder.com/250x300?text=Women+Category" alt="Women Category" />
+        <button>Shop Now</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Us Section -->
+  <section class="contact-us" id="contact">
+    <h2>Contact Us</h2>
+    <form class="contact-form">
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name" placeholder="Enter your name" required />
+
+      <label for="phone">Phone Number</label>
+      <input type="tel" id="phone" name="phone" placeholder="Enter phone number" required />
+
+      <label for="email">Email Address</label>
+      <input type="email" id="email" name="email" placeholder="Email Address" required />
+
+      <label for="message">Message</label>
+      <textarea id="message" name="message" placeholder="Message" rows="5" required></textarea>
+
+      <button type="submit">Submit</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <!-- Footer Brand -->
+    <div class="footer-section">
+      <h3>Promotex</h3>
+    </div>
+    <!-- Links -->
+    <div class="footer-section">
+      <h4>Links</h4>
+      <ul>
+        <li><a href="#categories">Categories</a></li>
+        <li><a href="#about">About us</a></li>
+        <li><a href="#contact">Contact us</a></li>
+      </ul>
+    </div>
+    <!-- Social Media -->
+    <div class="footer-section">
+      <h4>Social Media Links</h4>
+      <div class="social-icons">
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-facebook"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+      </div>
+    </div>
+    <!-- Contact Info -->
+    <div class="footer-section">
+      <h4>Contact Us</h4>
+      <p>promotex@gmail.com</p>
+      <p>+20109370281</p>
+    </div>
+  </footer>
+
+  <!-- Optional JavaScript -->
+  <script>
+    // Example: Smooth scroll for nav links (optional)
+    document.querySelectorAll('nav ul li a').forEach(link => {
+      link.addEventListener('click', function(e) {
+        e.preventDefault();
+        const href = this.getAttribute('href');
+        const offsetTop = document.querySelector(href).offsetTop;
+
+        window.scrollTo({
+          top: offsetTop - 60, // adjust for header height
+          behavior: 'smooth'
+        });
+      });
+    });
+  </script>
+</body>
+</html>

@@ -155,7 +155,6 @@
 
   <!-- Optional JavaScript -->
   <script>
-    // Example: Smooth scroll for nav links (optional)
     document.querySelectorAll('nav ul li a').forEach(link => {
       link.addEventListener('click', function(e) {
         e.preventDefault();
@@ -163,8 +162,8 @@
         const offsetTop = document.querySelector(href).offsetTop;
 
         window.scrollTo({
-          top: offsetTop - 60, // adjust for header height
-          behavior: 'smooth'
+          top: offsetTop - 60,
+                    behavior: 'smooth'
         });
       });
     });

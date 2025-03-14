@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seller Sign-Up</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/Front-End/Styles/seller-sign-up.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="steps">
+            <div class="step active" id="step-1">
+                <span class="circle">1</span>
+                <span class="step-text">Personal Info.</span>
+            </div>
+            <div class="line"></div>
+            <div class="step" id="step-2">
+                <span class="circle">2</span>
+                <span class="step-text">Verify</span>
+            </div>
+            <div class="line"></div>
+            <div class="step" id="step-3">
+                <span class="circle">3</span>
+                <span class="step-text">Links</span>
+            </div>
+            <div class="line"></div>
+            <div class="step" id="step-4">
+                <span class="circle">4</span>
+                <span class="step-text">Commercial Info.</span>
+            </div>
+        </div>
+
+        <form id="multiStepForm">
+            <div class="form-page page-1 active">
+                <div class="form-group">
+                    <label for="firstName">First Name</label>
+                    <div class="input-box">
+                        <i class="fas fa-user icon"></i>
+                        <input type="text" id="firstName" required>
+                    </div>
+                    <span class="error-message">Please enter your first name</span>
+                </div>
+                <div class="form-group">
+                    <label for="lastName">Last Name</label>
+                    <div class="input-box">
+                        <i class="fas fa-user icon"></i>
+                        <input type="text" id="lastName" required>
+                    </div>
+                    <span class="error-message">Please enter your last name</span>
+                </div>
+                <div class="form-group">
+                    <label for="address">Address</label>
+                    <div class="input-box">
+                        <i class="fas fa-map-marker-alt icon"></i>
+                        <input type="text" id="address" required>
+                    </div>
+                    <span class="error-message">Enter a valid address</span>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number</label>
+                    <div class="input-box">
+                        <i class="fas fa-phone icon"></i>
+                        <input type="text" id="phone" pattern="[0-9]{10}" required>
+                    </div>
+                    <span class="error-message">Enter a valid phone number</span>
+                </div>
+            </div>
+
+            <div class="form-page page-2">
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <div class="input-box">
+                        <i class="fas fa-envelope icon"></i>
+                        <input type="email" id="email" required>
+                    </div>
+                    <span class="error-message">Invalid email format</span>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <div class="input-box">
+                        <i class="fas fa-lock icon"></i>
+                        <input type="password" id="password" required>
+                    </div>
+                    <span class="error-message">Password must be at least 8 characters, contain one uppercase letter and one number</span>
+                </div>
+                <div class="form-group">
+                    <label for="confirmPassword">Confirm Password</label>
+                    <div class="input-box">
+                        <i class="fas fa-lock icon"></i>
+                        <input type="password" id="confirmPassword" required>
+                    </div>
+                    <span class="error-message">Passwords do not match</span>
+                </div>
+            </div>
+
+            <div class="form-page page-3">
+                <div class="form-group">
+                    <label for="Facebook">Facebook</label>
+                    <div class="input-box">
+                        <i class="fab fa-facebook icon"></i>
+                        <input type="url" id="Facebook">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="Instagram">Instagram</label>
+                    <div class="input-box">
+                        <i class="fab fa-instagram icon"></i>
+                        <input type="url" id="Instagram">
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-page page-4">
+                <div class="form-group">
+                    <label for="Store">Store Name</label>
+                    <div class="input-box">
+                        <i class="fas fa-store icon"></i>
+                        <input type="text" id="Store" required>
+                    </div>
+                    <span class="error-message">Please enter your store name</span>
+                </div>
+                <div class="form-group">
+                    <label for="governmentID">Photo of Government ID</label>
+                    <input type="file" id="governmentID">
+                </div>
+                <div class="form-group">
+                    <label for="shippingAddress">Shipping Address</label>
+                    <div class="input-box">
+                        <i class="fas fa-map-marker-alt icon"></i>
+                        <input type="text" id="shippingAddress" required>
+                    </div>
+                    <span class="error-message">Please enter your shipping address</span>
+                </div>
+                <div class="form-group">
+                    <label for="proofAddress">Proof of Address</label>
+                    <input type="file" id="proofAddress">
+                </div>
+                <div class="form-group">
+                    <label for="emergencyNumber">Emergency Number</label>
+                    <div class="input-box">
+                        <i class="fas fa-phone icon"></i>
+                        <input type="text" id="emergencyNumber" required>
+                    </div>
+                    <span class="error-message">Please enter your emergency number</span>
+                </div>
+                <div class="form-group">
+                    <label for="alternateNumber">Another Number</label>
+                    <div class="input-box">
+                        <i class="fas fa-phone icon"></i>
+                        <input type="text" id="alternateNumber" required>
+                    </div>
+                    <span class="error-message">Please enter another number</span>
+                </div>
+            </div>
+
+            <div class="buttons">
+                <button type="button" class="btn prev">
+                    <span><i class="fas fa-arrow-left"></i></span>
+                </button>
+                <button type="button" class="btn next">
+                   <span><i class="fas fa-arrow-right"></i></span>
+                </button>
+            </div>
+        </form>
+    </div>
+    <script src="script.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+    const formPages = document.querySelectorAll(".form-page");
+    const nextButtons = document.querySelectorAll(".next");
+    const prevButtons = document.querySelectorAll(".prev");
+    let currentPage = 0;
+
+    function showPage(index) {
+        formPages.forEach((page, i) => {
+            page.style.display = i === index ? "block" : "none";
+        });
+
+        prevButtons.forEach(btn => btn.style.display = index === 0 ? "none" : "inline-block");
+    }
+
+    function validatePage(index) {
+        let valid = true;
+        const inputs = formPages[index].querySelectorAll("input[required]");
+        inputs.forEach(input => {
+            const errorMessage = input.parentElement.nextElementSibling;
+            if (!input.value.trim()) {
+                errorMessage.style.display = "block";
+                valid = false;
+            } else {
+                errorMessage.style.display = "none";
+            }
+        });
+        return valid;
+    }
+
+    nextButtons.forEach(button => {
+        button.addEventListener("click", function () {
+            if (validatePage(currentPage)) {
+                currentPage++;
+                if (currentPage < formPages.length) {
+                    showPage(currentPage);
+                }
+            }
+        });
+    });
+
+    prevButtons.forEach(button => {
+        button.addEventListener("click", function () {
+            currentPage--;
+            showPage(currentPage);
+        });
+    });
+
+    showPage(currentPage);
+});
+
+    </script>
+</body>
+</html>

@@ -5,9 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Promotex Signup</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="rolepick.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/Front-End/Styles/rolepick.css">
 </head>
 <body>
     <div class="container">
@@ -23,12 +23,14 @@
         </div>
     </div>
     <script>
-        document.querySelector(".buyer-btn").addEventListener("click", function() {
-            alert("Buyer Signup Clicked!");
-        });
+        document.addEventListener("DOMContentLoaded", function() {
+            document.querySelector(".buyer-btn").addEventListener("click", function() {
+                window.location.href = "/Front-End/Pages/buyersignup.html"; // Redirect to buyer signup page
+            });
 
-        document.querySelector(".seller-btn").addEventListener("click", function() {
-            alert("Seller Signup Clicked!");
+            document.querySelector(".seller-btn").addEventListener("click", function() {
+                window.location.href = "/Front-End/Pages/seller-signup.html"; // Redirect to seller signup page
+            });
         });
     </script>
 </body>

@@ -46,13 +46,15 @@ nav ul {
 }
 
 .shop-now-btn {
-  background-color: #a78b74;
+  background-color: #121212E5;
   color: #fff;
   padding: 0.5rem 1rem;
   border: none;
   cursor: pointer;
-  border-radius: 4px;
+  border-radius: 3px;
   font-weight: bold;
+  gap: 10px;
+  
 }
 
 .shop-now-btn:hover {

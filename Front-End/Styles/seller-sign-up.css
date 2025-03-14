@@ -44,10 +44,12 @@ body {
     z-index: 0;
     transform: translateY(-50%);
 }
-
-.steps.completed::before {
-    background-color: #28a745;
+.step.completed .circle {
+    background-color: #28a745; /* Green color */
+    color: #fff;
+    border: none;
 }
+
 
 .step {
     display: flex;

@@ -169,17 +169,35 @@
     <script>
         document.addEventListener("DOMContentLoaded", function () {
     const formPages = document.querySelectorAll(".form-page");
+    const steps = document.querySelectorAll(".step");
     const nextButtons = document.querySelectorAll(".next");
     const prevButtons = document.querySelectorAll(".prev");
     let currentPage = 0;
-
     function showPage(index) {
-        formPages.forEach((page, i) => {
-            page.style.display = i === index ? "block" : "none";
-        });
+    formPages.forEach((page, i) => {
+        page.style.display = i === index ? "block" : "none";
+    });
 
-        prevButtons.forEach(btn => btn.style.display = index === 0 ? "none" : "inline-block");
-    }
+    steps.forEach((step, i) => {
+        const circle = step.querySelector(".circle");
+
+        if (i < index) {
+            step.classList.add("completed"); // Add completed class
+            circle.innerHTML = '<i class="fas fa-check"></i>'; // Change number to check icon
+        } else {
+            step.classList.remove("completed");
+            circle.innerHTML = i + 1; // Reset to step number
+        }
+
+        if (i === index) {
+            step.classList.add("active");
+        } else {
+            step.classList.remove("active");
+        }
+    });
+
+    prevButtons.forEach(btn => btn.style.display = index === 0 ? "none" : "inline-block");
+}
 
     function validatePage(index) {
         let valid = true;

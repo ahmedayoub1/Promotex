@@ -18,7 +18,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
         prevButtons.forEach(btn => btn.style.display = index === 0 ? "none" : "inline-block");
     }
-
     function validatePage(index) {
         let valid = true;
         const inputs = formPages[index].querySelectorAll("input[required]");

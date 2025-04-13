@@ -25,7 +25,22 @@ header {
   align-items: center;
   justify-content: space-between;
   padding: 1rem 2rem;
+<<<<<<< HEAD
   border-bottom: 1px solid #ccc;
+=======
+  /* border-bottom: 1px solid #ccc; */
+}
+header nav ul li a:hover{
+  border-bottom: 4px solid;
+  font-size: 15px;
+}
+
+header nav ul li a{
+padding-bottom: 5px;
+border-bottom: none;
+/* transition:   2s ease-in-out; */
+
+>>>>>>> origin/master
 }
 
 .logo h2 {
@@ -61,11 +76,61 @@ nav ul {
   background-color: #8f7863;
 }
 
+<<<<<<< HEAD
 /* Hero Section */
 .hero { width: 1357px;
   height: 581px;
   overflow: hidden;
   top: 160px;
+=======
+
+
+
+.hero-contentt{
+  width: 88%;
+  height: 500px;
+  margin: auto;
+  margin-top: 30px;
+  border-radius: 10px;
+  position: relative;
+  /* background-image: url(/Front-End/Assets/hero\ Section.jpg); */
+  /* background-size: cover; */
+}
+.hero-image{
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  position: absolute;
+}
+
+.hero-textt{
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  background-color: #333;
+}
+
+.hero-image img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+
+
+
+
+
+
+
+/* Hero Section */
+.hero {
+  /* width: 1357px; */
+  /* height: 581px; */
+  overflow: hidden;
+  /* top: 160px; */
+>>>>>>> origin/master
   border-radius: 8px;
 }
 
@@ -85,7 +150,11 @@ nav ul {
 }
 
 .hero-image-container {
+<<<<<<< HEAD
   position: absolute;
+=======
+  /* position: absolute; */
+>>>>>>> origin/master
   width: 100%;
   height: 100%;
 }
@@ -99,7 +168,11 @@ nav ul {
 .hero-text {
   position: absolute;
   top: 50%;
+<<<<<<< HEAD
   left: 15%;
+=======
+  left: 25%;
+>>>>>>> origin/master
   transform: translate(-50%, -50%);
   color: #fff;
 }

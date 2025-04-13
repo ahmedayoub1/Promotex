@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Promotex Signup</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/Front-End/Styles/rolepick.css">
+</head>
+<body>
+    <div class="container">
+        <div class="buyer-section">
+            <h2>Join Promotex as a Buyer</h2>
+            <p>Discover a world of trusted products, seamless shopping, and tailored deals just for you.</p>
+            <button class="buyer-btn">Sign up as Buyer</button>
+        </div>
+        <div class="seller-section">
+            <h2>Join Promotex as a Seller</h2>
+            <p>Showcase your products, reach more customers, and grow your business effortlessly.</p>
+            <button class="seller-btn">Sign up as Seller</button>
+        </div>
+    </div>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            document.querySelector(".buyer-btn").addEventListener("click", function() {
+                window.location.href = "/Front-End/Pages/buyersignup.html"; // Redirect to buyer signup page
+            });
+
+            document.querySelector(".seller-btn").addEventListener("click", function() {
+                window.location.href = "seller-signup.html"; // Redirect to seller signup page
+            });
+        });
+    </script>
+</body>
+</html>

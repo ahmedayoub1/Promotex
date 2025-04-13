@@ -1,0 +1,241 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f9f9f9;
+    margin: 0;
+    overflow: hidden;
+}
+
+.container {
+    width: 100%;
+    max-width: 800px;
+    padding: 40px;
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.steps {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+    position: relative;
+}
+.steps::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 5%;
+    width: 90%;
+    height: 2px;
+    background: #7d6547;
+    z-index: 0;
+    transform: translateY(-50%);
+}
+.step.completed .circle {
+    background-color: #28a745; /* Green color */
+    color: #fff;
+    border: none;
+}
+
+
+.step {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    position: relative;
+    background: #ffffff;
+    padding: 0 10px;
+    z-index: 1;
+    flex: 1;
+    justify-content: center;
+    max-width: 300px;
+    font-weight: lighter;
+}
+
+.circle {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #e0e0e0;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 600;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.step.active .circle {
+    background-color: #7d6547;
+    color: #fff;
+}
+
+.step.completed .circle {
+    background-color: #28a745;
+    color: #fff;
+}
+
+.step-text {
+    margin-top: 0.5rem;
+    font-size: 11px;
+    color: #666;
+    text-align: center;
+    position: relative;
+}
+
+.step-text::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: calc(100% + 5px); /* Add space between the text and the line */
+    width: 20px; /* Adjust the width of the line */
+    height: 1px; /* Make the line thin */
+    background-color: #666;
+    transform: translateY(-50%);
+}
+
+.line {
+    position: absolute;
+    top: 20px;
+    left: 0;
+    height: 2px;
+    background-color: #e0e0e0;
+    width: 100%;
+    z-index: 0;
+}
+
+.line.completed {
+    background-color: #28a745;
+}
+
+.form-page {
+    display: none;
+}
+
+.form-page.active {
+    display: block;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-size: 14px;
+    color: #333;
+    font-weight: 500;
+}
+
+.input-box {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 0.75rem;
+    background-color: #f9f9f9;
+    transition: border-color 0.3s ease;
+}
+
+.input-box:hover {
+    border-color: #007bff;
+}
+
+.input-box .icon {
+    margin-right: 0.75rem;
+    font-size: 20px;
+    color: #666;
+}
+
+.input-box input {
+    border: none;
+    outline: none;
+    width: 100%;
+    font-size: 14px;
+    background-color: transparent;
+}
+
+.input-box input::placeholder {
+    color: #999;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+}
+
+.btn {
+    padding: 0.5rem 1rem; /* Adjust padding */
+    border: none;
+    border-radius: 8px;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 500;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+.btn.prev:hover {
+    background-color: #5a6268;
+}
+
+.error-container {
+    display: none;
+    color: red;
+    margin-top: 1rem;
+    text-align: center;
+    font-size: 14px;
+}
+
+.error-message {
+    color: red;
+    font-size: 14px;
+    display: block;
+    margin-top: 5px;
+}
+
+.valid {
+    border-color: green;
+}
+
+.invalid {
+    border-color: red;
+}
+
+.btn.prev, .btn.next {
+    padding: 8px; /* Adjust padding */
+    width: 40px; /* Adjust width */
+    height: 40px; /* Adjust height */
+    border-radius: 8px;
+    background-color: #998A78;
+    color: #fff;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 500;
+    transition: background-color 0.3s ease;
+}
+
+.btn.prev i, .btn.next i {
+    font-size: 20px; /* Adjust the font size of the icons */
+}

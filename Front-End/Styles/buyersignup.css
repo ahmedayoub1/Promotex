@@ -46,7 +46,7 @@ body {
 }
 
 .steps.completed::before {
-    background-color: #28a745;
+    background-color: #28a745; /* ✅ اللون الأخضر عند إكمال جميع الخطوات */
 }
 
 .step {
@@ -77,17 +77,15 @@ body {
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-.step.active .circle
- {
+.step.active .circle {
     background-color: #7d6547;
     color: #fff;
 }
 .step.completed .circle {
-    background-color: #28a745; /* Green color */
+    background-color: #28a745; /* ✅ أخضر */
     color: #fff;
     border: none;
 }
-
 
 .step-text {
     margin-top: 0.5rem;
@@ -101,9 +99,9 @@ body {
     content: "";
     position: absolute;
     top: 50%;
-    left: calc(100% + 5px); /* Add space between the text and the line */
-    width: 20px; /* Adjust the width of the line */
-    height: 1px; /* Make the line thin */
+    left: calc(100% + 5px); 
+    width: 20px; 
+    height: 1px; 
     background-color: #666;
     transform: translateY(-50%);
 }
@@ -132,7 +130,7 @@ body {
 
 .form-group-container {
     display: flex;
-    gap: 20px; /* Adjust the gap between the fields */
+    gap: 20px;
 }
 
 .form-group {
@@ -187,10 +185,10 @@ body {
 }
 
 .btn {
-    padding: 0.5rem 1rem; /* Adjust padding */
+    padding: 0.5rem 1rem;
     border: none;
     border-radius: 8px;
-    background-color: #007bff;
+    background-image: linear-gradient(to right, #8f7863, #a78b74);
     color: #fff;
     cursor: pointer;
     font-size: 14px;
@@ -199,7 +197,7 @@ body {
 }
 
 .btn:hover {
-    background-color: #0056b3;
+    background-image: linear-gradient(to right, #a78b74, #998A78);
 }
 
 .btn.prev:hover {
@@ -217,7 +215,7 @@ body {
 .error-message {
     color: red;
     font-size: 14px;
-    display: block;
+    display: none;
     margin-top: 5px;
 }
 
@@ -230,9 +228,9 @@ body {
 }
 
 .btn.prev, .btn.next {
-    padding: 8px; /* Adjust padding */
-    width: 40px; /* Adjust width */
-    height: 40px; /* Adjust height */
+    padding: 8px;
+    width: 40px;
+    height: 40px;
     border-radius: 8px;
     background-color: #998A78;
     color: #fff;
@@ -243,5 +241,5 @@ body {
 }
 
 .btn.prev i, .btn.next i {
-    font-size: 20px; /* Adjust the font size of the icons */
+    font-size: 20px;
 }

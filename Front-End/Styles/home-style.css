@@ -15,6 +15,11 @@ a {
   color: inherit;
 }
 
+.profile-icon{
+  font-size: 35px;
+  color: #8f7863;
+}
+
 h1, h2, h3, h4 {
   margin-bottom: 0.5rem;
 }
@@ -39,6 +44,7 @@ border-bottom: none;
 
 }
 
+
 .logo h2 {
   font-size: 1.5rem;
   font-weight: bold;
@@ -54,6 +60,7 @@ nav ul {
   display: flex;
   align-items: center;
   gap: 1rem;
+  font-size: 30px;
 }
 
 .shop-now-btn {

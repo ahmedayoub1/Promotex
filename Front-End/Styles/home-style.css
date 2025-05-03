@@ -30,9 +30,6 @@ header {
   align-items: center;
   justify-content: space-between;
   padding: 1rem 2rem;
-<<<<<<< HEAD
-  border-bottom: 1px solid #ccc;
-=======
   /* border-bottom: 1px solid #ccc; */
 }
 header nav ul li a:hover{
@@ -45,7 +42,6 @@ padding-bottom: 5px;
 border-bottom: none;
 /* transition:   2s ease-in-out; */
 
->>>>>>> origin/master
 }
 
 
@@ -83,13 +79,6 @@ nav ul {
   background-color: #8f7863;
 }
 
-<<<<<<< HEAD
-/* Hero Section */
-.hero { width: 1357px;
-  height: 581px;
-  overflow: hidden;
-  top: 160px;
-=======
 
 
 
@@ -137,7 +126,6 @@ nav ul {
   /* height: 581px; */
   overflow: hidden;
   /* top: 160px; */
->>>>>>> origin/master
   border-radius: 8px;
 }
 
@@ -157,11 +145,7 @@ nav ul {
 }
 
 .hero-image-container {
-<<<<<<< HEAD
-  position: absolute;
-=======
   /* position: absolute; */
->>>>>>> origin/master
   width: 100%;
   height: 100%;
 }
@@ -175,11 +159,7 @@ nav ul {
 .hero-text {
   position: absolute;
   top: 50%;
-<<<<<<< HEAD
-  left: 15%;
-=======
   left: 25%;
->>>>>>> origin/master
   transform: translate(-50%, -50%);
   color: #fff;
 }
@@ -404,6 +384,62 @@ button:hover {
     height: auto;
   }
 }
+/* FAQ Section Styles */
+
+.faq-section {
+  
+  padding: 4rem 2rem;
+  color: black;
+}
+
+.faq-container {
+  max-width: 800px;
+  margin: auto;
+}
+
+.faq-title {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.faq-item {
+  border-bottom: 1px solid #333;
+  padding: 1rem 0;
+}
+
+.faq-question {
+  display: flex;
+  justify-content: space-between;
+  align-items: left;
+  cursor: pointer;
+  font-size: 1.1rem;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.faq-question:hover {
+  color: #cccccc;
+}
+
+.arrow {
+  transition: transform 0.3s ease;
+}
+
+.faq-answer {
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 0.4s ease;
+  color: black;
+  padding-top: 0.5rem;
+  font-size: 0.95rem;
+  align-items: left;
+}
+.arrow{
+  color: #a78b74;
+
+
+}
 
 /* Contact Us Section */
 .contact-us {
@@ -487,5 +523,4 @@ footer {
   margin-right: 0.5rem;
   color: #fff;
 }
-
 

@@ -12,7 +12,8 @@
   <!-- Header -->
   <header>
     <div class="logo">
-      <img src="../Assets/secondPromotex.png" alt="logo"width="100px" height="100px" />
+     <!--<a href="home.html">--> <img src="../Assets/secondPromotex.png" alt="logo"width="100px" height="100px"
+       />
     </div>
     <nav>
       <ul>
@@ -30,9 +31,6 @@
   </header>
 
   <!-- Hero Section -->
-<<<<<<< HEAD
-  <section class="hero" id="hero">
-=======
    <section class="hero">
     <div class="hero-contentt">
       <div class="hero-image">
@@ -42,7 +40,7 @@
       <div class="hero-text">
         <h1>Shop Smarter, Live Better.</h1>
         <p>Find everything you need, with deals you can’t resist, all at your fingertips.</p>
-        <button class="hero-btn">Shop Now</button>
+        <button class="hero-btn"> <a href="home.html">Shop Now</a></button>
       </div>
     </div>
 
@@ -50,7 +48,6 @@
 
   <!-- Hero Section -->
   <!-- <section class="hero" id="hero">
->>>>>>> origin/master
     <div class="hero-content">
       <div class="hero-image-container">
         <img src="/Front-End/Assets/hero Section.jpg" alt="Hero Image" class="hero-image" />
@@ -61,11 +58,7 @@
         </div>
       </div>
     </div>
-<<<<<<< HEAD
-  </section>
-=======
   </section> -->
->>>>>>> origin/master
   <section class="product-grid">
     <div class="product-item">
         <img src="../Assets/IMG-20250210-WA0012.jpg" alt="Suit Fashion">
@@ -110,7 +103,7 @@
     <!-- Men Category -->
     <div class="category-item">
       <div class="image-box">
-        <img src="../Assets/IMG-20250210-WA0018.jpg" alt="Men Category" />
+        <img src="../Assets/grid3.jpg" alt="Men Category" />
       </div>
       <h3>Men</h3>
       <button>Shop Now</button>
@@ -124,9 +117,63 @@
       <h3>Women</h3>
       <button>Shop Now</button>
     </div>
-  </div>
-</section>
-
+  </div><section id="faq" class="faq-section">
+    <div class="faq-container">
+      <h2 class="faq-title">FaQs</h2>
+  
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this)">
+          <span>What is Promotex?</span>
+          <span class="arrow">&#9660;</span>
+        </div>
+        <div class="faq-answer">
+          Promotex connects customers with local brands for shopping and renting clothing, beauty, and food products.
+        </div>
+      </div>
+  
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this)">
+          <span>How can my brand or shop join Promotex?</span>
+          <span class="arrow">&#9660;</span>
+        </div>
+        <div class="faq-answer">
+          Joining Promotex is easy! Simply register for a seller account through our "Become a Seller" page. After submitting your brand details and product information, our team will review your application. Once approved, you can start listing your products and reaching a wider community of customers who value local brands.</div>
+      </div>
+  
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this)">
+          <span>Can I return or exchange products purchased through Promotex?</span>
+          <span class="arrow">&#9660;</span>
+        </div>
+        <div class="faq-answer">
+          Yes, Promotex allows returns and exchanges according to each seller’s return policy. You can view the specific return conditions on the product page before purchasing. If you need assistance, our support team is always available to guide you through the process and ensure a smooth experience.        </div>
+      </div>
+  
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this)">
+          <span>How can I buy products from local brands on Promotex?</span>
+          <span class="arrow">&#9660;</span>
+        </div>
+        <div class="faq-answer">
+          You can browse a wide selection of products from verified local brands directly on Promotex. When you find a product you like, simply add it to your cart and proceed to secure checkout. After placing your order, you will receive confirmation and tracking details to stay updated on your delivery.        </div>
+      </div>
+    </div>
+  </section>
+  
+  <script>
+    function toggleFaq(element) {
+      const answer = element.nextElementSibling;
+      const arrow = element.querySelector('.arrow');
+      if (answer.style.maxHeight) {
+        answer.style.maxHeight = null;
+        arrow.style.transform = "rotate(0deg)";
+      } else {
+        answer.style.maxHeight = answer.scrollHeight + "px";
+        arrow.style.transform = "rotate(180deg)";
+      }
+    }
+  </script>
+  
   <!-- Contact Us Section -->
   <section class="contact-us" id="contact">
     <h2>Contact Us</h2>

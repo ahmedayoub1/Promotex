@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Promotex Login</title>
     <link rel="stylesheet" href="../Styles/login.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.10.2/lottie.min.js"></script>
+
 </head>
 <body>
     <div class="container">
@@ -32,10 +34,20 @@
                 </form>
             </div>
             <div class="login-image">
-                <img src="../Assets/photo.jpg" alt="Fashion model" class="model-img">
+                <div id="login-image" class="model-img" style="width: 672px; height: 1024px;"></div>
             </div>
         </div>
     </div>
+    <script>
+        lottie.loadAnimation({
+          container: document.getElementById('login-image'), // ID of the container
+          renderer: 'svg',
+          loop: true,
+          autoplay: true,
+          path:"../Assets/woman-shopping-online.json" // Path to the animation JSON file
+        });
+      </script>
+      
     <script src="../Scripts/login script.js"></script>
 </body>
 </html>
